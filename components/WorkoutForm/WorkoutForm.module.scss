@@ -1,0 +1,84 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 30px;
+  max-width: 520px !important;
+  height: 100%;
+  @media (max-width: 768px) {
+    justify-content: start;
+    margin-top: 50px !important;
+  }
+  .input {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: start;
+    width: 100%;
+  }
+  label {
+    color: #896cfe;
+    font-size: 18px;
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+  .form {
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+  }
+  input {
+    border-radius: 15px;
+    font-size: 16px;
+    background: #fff;
+    padding: 16px;
+    padding-right: 32px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    &::placeholder {
+      color: #525252;
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
+    }
+    &:focus::placeholder {
+      color: #878686;
+    }
+    @media (max-width: 768px) {
+      padding: 12px;
+      font-size: 14px;
+    }
+  }
+  button {
+    width: 100%;
+    padding: 12px 13px;
+    border-radius: 100px;
+    font-size: 18px;
+    color: #000;
+    background: #e2f163;
+    border: none;
+    cursor: pointer;
+    border: 1px solid #e2f163;
+    &:hover {
+      background: transparent;
+      color: #fff;
+    }
+  }
+}
+.actions {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 100%;
+}
+.exercise {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 100%;
+}

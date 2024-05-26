@@ -1,0 +1,30 @@
+.header {
+  padding: 0px 15px;
+  @media (max-width: 768px) {
+    padding: 0px 10px;
+  }
+}
+.wrapper {
+  width: 100%;
+  background: #000;
+  border-radius: 0px 0px 15px 15px;
+  padding: 20px !important;
+  @media (max-width: 768px) {
+    padding: 15px !important;
+  }
+}
+.list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  @media (max-width: 768px) {
+    gap: 25px;
+    justify-content: center;
+  }
+  @media (max-width: 375px) {
+    font-size: 14px;
+  }
+}
+.active {
+  color: #e2f163;
+}

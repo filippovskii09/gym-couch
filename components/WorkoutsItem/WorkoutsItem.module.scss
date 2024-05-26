@@ -1,0 +1,15 @@
+.workout {
+  width: 100%;
+  padding: 12px;
+  background: #896cfe;
+  border-radius: 15px;
+  text-transform: capitalize;
+  box-shadow: 2px 5px 0px 1px #553cbd;
+  &:hover {
+    background: #785bea;
+  }
+  &:active {
+    box-shadow: 1px 2px 0px 1px #553cbd; /* Зміщуємо тінь при натисканні */
+    transform: translate(2px, 2px); /* Додаємо зміщення вниз */
+  }
+}

@@ -1,8 +1,8 @@
 "use client";
 
-import { baseURL } from "@/app/(home)/layout";
 import { useEffect, useState } from "react";
 import { Exercise } from "../context/workoutContext";
+import { baseURL } from "@/app/(home)/page";
 
 interface Workout {
   createdAt: string;

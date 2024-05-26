@@ -1,8 +1,8 @@
 "use client";
 
-import { baseURL } from "@/app/(home)/layout";
 import { useCallback, useState } from "react";
 import { Exercise } from "../context/workoutContext";
+import { baseURL } from "@/app/(home)/page";
 
 type CurrentWorkoutType = {
   name: string;

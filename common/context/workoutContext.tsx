@@ -23,7 +23,7 @@ export interface Exercise {
   name: string;
   sets: Set[];
 }
-
+export const baseURL = "https://66068289be53febb857e0d81.mockapi.io";
 type WorkoutContextType = {
   workoutData: Exercise[];
   setWorkoutData: Dispatch<SetStateAction<Exercise[]>>;

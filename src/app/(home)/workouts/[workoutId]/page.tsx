@@ -1,6 +1,14 @@
+import { FC } from "react";
 import WorkoutDetail from "../../../../../components/WorkoutDetail/WorkoutDetail";
+interface WorkoutDetailPageParams {
+  workoutId: string;
+}
 
-const WorkoutDetailPage = ({ params }: any) => {
+interface Props {
+  params: WorkoutDetailPageParams;
+}
+
+const WorkoutDetailPage: FC<Props> = ({ params }) => {
   return <WorkoutDetail params={params} />;
 };
 

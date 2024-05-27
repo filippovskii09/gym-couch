@@ -1,9 +1,9 @@
 import { Dispatch, SetStateAction } from "react";
 import { Exercise } from "../context/workoutContext";
 
-type addSetPropsType = {
+interface addSetPropsType {
   setWorkoutData: Dispatch<SetStateAction<Exercise[]>>;
-};
+}
 
 const addSet = ({ setWorkoutData }: addSetPropsType) => {
   const handleAddSet = (exerciseIndex: number) => {

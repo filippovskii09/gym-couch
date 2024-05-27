@@ -2,10 +2,10 @@ import { Exercise } from "../context/workoutContext";
 import usePostWorkouts from "../hooks/usePostWorkouts.hook";
 import { useRouter } from "next/navigation";
 
-type workoutSubmitPropsType = {
+interface workoutSubmitPropsType {
   workoutName: string;
   workoutData: Exercise[];
-};
+}
 
 const workoutSubmit = ({
   workoutName,

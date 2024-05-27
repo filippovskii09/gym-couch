@@ -1,9 +1,9 @@
 import { FC } from "react";
 import styles from "./WorkoutsItem.module.scss";
 
-type Props = {
+interface Props {
   name: string;
-};
+}
 
 const WorkoutsItem: FC<Props> = ({ name }) => {
   return (

@@ -3,10 +3,10 @@
 import { useCallback, useState } from "react";
 import { Exercise, baseURL } from "../context/workoutContext";
 
-type CurrentWorkoutType = {
+interface CurrentWorkoutType {
   name: string;
   exercises: Exercise[];
-};
+}
 const useGetCurrentWorkout = () => {
   const [currentWorkout, setCurrentWorkout] =
     useState<CurrentWorkoutType | null>();
